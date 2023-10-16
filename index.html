@@ -2,29 +2,82 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visiontec Informática</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/sliders.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">OII</div>
-        <ul class="menu">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Produtos</li>
-            <li><a href="#"></a>Monte seu PC</li>
-            <li><a href="#"></a>Contato</li>
-        </ul>
+    <header id="header">
+        <a id="logo" href="">Logo</a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <div class="menu-mobile">
+                    <span id="hamburger"></span>
+                </div>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Monte seu PC</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
         <div class="cart-login">
-            <ion-icon name="cart-outline" size="large"></ion-icon>
-            <button id="login">Login</button>
+            <ion-icon name="cart-outline" style="font-size: 30px;"></ion-icon>
+            <button id="login">Entrar</button>
             <button id="create-an-account">Criar uma conta</button>
-        
         </div>
     </header>
 
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="img/slide-1.jpg" alt="slide 1">
+                <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="img/slide-2.jpg" alt="slide 3">
+                <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="img/slide-3.jpg" alt="slide 3">
+                <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/js/sliders.js"></script>
+    <script src="/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

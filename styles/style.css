@@ -1,0 +1,158 @@
+body,
+ul {
+  font-family: "Lato";
+  background-color: #000A63;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000A63;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem; 
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+#menu li a{
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+#menu li a:hover{
+    background-color: white;
+    color: #000A63;
+    transition: all 0.4s;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.cart-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+ion-icon{
+    color: white;
+    cursor: pointer;
+}
+#login {
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+}
+#login:hover{
+    background-color: #DEDEDE;
+}
+#create-an-account {
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    color: white;
+    background-color: #00C208;
+    cursor: pointer;
+}
+#create-an-account:hover{
+    background-color: #009906;
+}
+
+@media (max-width: 600px) {
+
+  .menu-mobile{
+    display: flex;
+    flex-direction: row;
+    gap: 20px   ;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 70px;
+    opacity: 0.9;
+    right: 0px;
+    background: #000A63;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2.4px solid white;
+    width: 20px;
+    margin-top: 5px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .cart-login{
+    display: none;
+  }
+}
