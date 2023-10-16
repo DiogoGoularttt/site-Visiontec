@@ -69,6 +69,7 @@ ion-icon{
     border: none;
     border-radius: 7px;
     padding: 7px;
+    color: #000A63;
     cursor: pointer;
 }
 #login:hover{
@@ -84,6 +85,21 @@ ion-icon{
 }
 #create-an-account:hover{
     background-color: #009906;
+}
+
+.some-products{
+    height: 600px;
+    margin: 0 3rem;
+}
+.title_some-projects{
+    display: flex;
+    justify-content: center;
+    margin: 7rem auto 0rem auto;
+    font-size: 32px;
+    color: white;
+    width: 30%;
+
+
 }
 
 @media (max-width: 600px) {
@@ -110,7 +126,7 @@ ion-icon{
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
-    visibility: visible;
+    visibility visible;
     overflow-y: auto;
   }
   #menu a {

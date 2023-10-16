@@ -36,7 +36,9 @@ section.slider{
     margin-top: 35%;
     display: flex;
     justify-content: center;
+
 }
+
 
 .nav-manual .manual-btn, .nav-auto div{
     border: 1px solid white;
