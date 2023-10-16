@@ -126,7 +126,7 @@ ion-icon{
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
-    visibility visible;
+    visibility: visible;
     overflow-y: auto;
   }
   #menu a {
