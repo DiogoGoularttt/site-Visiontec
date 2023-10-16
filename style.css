@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000A63 no-repeat center/cover;
+    height: 600px;
+}
+
+header {
+    display: flex;
+    margin: 35px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    height: 18%;
+
+    border: 1px solid red;
+}
+
+.logo {
+
+    border: 1px solid black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    border: 1px solid black;
+}
+
+.cart-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-login ion-icon {
+    color: white;
+    gap: 10px;
+}
+
+.cart-login button {
+    display: flex;
+    padding: 8px;
+
+}
+
+#login {
+    border: none;
+}
+
+#create-an-account {
+    background-color: #00D022;
+    border: none;
+}
