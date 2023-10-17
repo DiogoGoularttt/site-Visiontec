@@ -98,8 +98,30 @@ ion-icon{
     font-size: 32px;
     color: white;
     width: 30%;
+}
 
+#products{
+    width: 90%;
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
 
+    
+}
+
+.card-product{
+    text-align: center;
+    width: 30%;
+    border-radius: 20px;
+    height: 25rem;
+    padding: 25px;
+    background: white;
+    box-shadow: 8px -8px #C4C4C4;
+}
+
+.card-product img {
+    border-radius: 10px;
 }
 
 @media (max-width: 600px) {
