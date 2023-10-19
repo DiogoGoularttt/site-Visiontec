@@ -89,17 +89,21 @@ ion-icon{
 
 
 section.featured-products {
+  width: 96%;
+  background: #F7F7F7;
+  border-radius: 10px;
+  margin: 7rem auto;
   min-height: 100vh;
-  padding: 2rem 0;
+
 }
 
 h2{
-  color: #fff;
+  color: #000A63;
   font-size: 32px;
   font-weight: 300;
   position: relative;
-  margin-bottom: 5rem;
-  margin-top: 10rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
   text-align: center ;
 }
 
@@ -108,7 +112,7 @@ h2::after{
   position: absolute;
   width: 200px;
   height: 3px;
-  background-color: #fff;
+  background-color: #000A63;
   bottom: -10px;
   left: 0;
   right: 0;
@@ -117,6 +121,7 @@ h2::after{
 
 .carrossel{
   display: flex;
+  padding: 0rem 2rem;
 }
 
 .carrossel .card {
@@ -127,7 +132,6 @@ h2::after{
   -webkit-box-shadow: 4px 4px 5px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 4px 5px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 5px -5px rgba(0, 0, 0, 0.75);
-  width: 100%;
   max-width: 300px;
   display: flex !important;
   flex-direction: column;
@@ -202,8 +206,25 @@ h2::after{
   color: #fff;
 }
 
+.slick-prev {
+  left: 0.4% !important;
+}
+
+button.slick-prev.slick-arrow::before{
+  color: #000A63;
+}
+
+.slick-next {
+  right: 0.4% !important;
+}
+
+button.slick-next.slick-arrow::before{
+  color: #000A63;
+}
+
+
 button.veja-mais {
-  padding: 7px;
+  
 }
 
 @media (max-width: 600px) {

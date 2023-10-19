@@ -43,6 +43,7 @@ section.slider{
 .nav-manual .manual-btn, .nav-auto div{
     border: 1px solid white;
     padding: 10px;
+    margin-bottom: 2rem;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
